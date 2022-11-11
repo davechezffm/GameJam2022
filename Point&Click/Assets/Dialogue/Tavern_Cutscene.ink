@@ -1,74 +1,60 @@
 INCLUDE Globals.ink
 Ello’ Stranger, Odd to see wanderers’ about these parts”
 
++ [Do you see anyone about these parts?]
+-> Parts
+
++ [My name is John, Not Stranger.]
+-> John
+
++ [Can I get a drink barman?]
+-> Drink
 
 
-+ [Who are you??]
--> WhoAre
-+ [My Father was a king!?]
--> Father
 
-+ [Where am I?]
+===Parts===
+No, actually, you’re the first in months.
+-> Items
+
+===John===
+Beggin’ your Pardon John but you are mighty strange.
+-> Items
+
+
+===Drink===
+Unfortunately the taps have been dry for a season, I can offer you some assorted wares though.
+-> Items
+
+
+===Items===
+I should charge for these but I’ve no use for coin in these parts.
+
++ [No beer and no money, Where the hell am I?]
 -> Where
 
++ [You can't charge for this junk!]
+-> Junk
 
-->DONE
++ [Where should I go next?]
+-> GoNext
 
-->END
 
-===WhoAre===
-Angel: I am the Angel, sent to warn you of your fathers impending demise.
-Angel: “Heed my warning <Player>, All I can offer you is my faithful horse Daisy and her favourite wagon, I wish I could do more however budget restrictions prevent me from interfering in musical affairs.” 
-+ [What good is a horse?]
--> Horse
-+ [You didnt really answer my last question!]
--> Last
-
-+ [How can an angel have budget restrictions?]
--> Angel
-
-===Father===
-Angel: He still is.
-Angel: “Heed my warning <Player>, All I can offer you is my faithful horse Daisy and her favourite wagon, I wish I could do more however budget restrictions prevent me from interfering in musical affairs.” 
-+ [What good is a horse?]
--> Horse
-+ [You didnt really answer my last question!]
--> Last
-
-+ [How can an angel have budget restrictions?]
--> Angel
 
 ===Where===
-Angel: On a beach after being shipwrecked it would seem.
-Angel: “Heed my warning <Player>, All I can offer you is my faithful horse Daisy and her favourite wagon, I wish I could do more however budget restrictions prevent me from interfering in musical affairs.” 
-+ [What good is a horse?]
--> Horse
-+ [You didnt really answer my last question!]
--> Last
-
-+ [How can an angel have budget restrictions?]
--> Angel
-
-===Horse===
-Only as good as its owner. Farewell, Take care of Daisy, she is very sick.
-+ [Errr Thanks]
--> Scene2
-
-===Last===
-I did. Farewell, Goodluck
-+ [Errr Thanks]
--> Scene2
-
-
-
-===Angel===
-We are paid in communion wafers and wine, so not motivated to go above and beyond.  Farewell, If you find my wafers let me know!
-+ [Errr Thanks]
--> Scene2
-
-===Scene2===
-~opening = true
+One of them for sure. Not sure which one. Now beat it stranger.
 ->END
+
+
+===Junk===
+I can! And I will next time! Now scoot!
+->END
+
+===GoNext===
+Out of my Tavern would be a good start.
+->END
+
+
+
 
 
 
