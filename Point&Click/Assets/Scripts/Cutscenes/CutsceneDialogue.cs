@@ -4,6 +4,8 @@ using UnityEngine;
 using Ink.UnityIntegration;
 using Ink.Runtime;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
+using TMPro;
 
 public class CutsceneDialogue : MonoBehaviour
 {
@@ -17,11 +19,15 @@ public class CutsceneDialogue : MonoBehaviour
     public GameObject sceneClose;
     public GameObject sceneOpen;
     public bool endScene;
+    public string characterName;
+  
+    public TextMeshProUGUI characterText;
     // Start is called before the first frame update
 
     private void Start()
     {
         dm = FindObjectOfType<DialogueManager>();
+        
     }
     // Update is called once per frame
     void Update()
@@ -42,6 +48,7 @@ public class CutsceneDialogue : MonoBehaviour
 
     public void Dialogue( TextAsset dialogue)
     {
+        characterText.text = characterName;
         dm.EnterDialogueMode(dialogue);
     }
 
