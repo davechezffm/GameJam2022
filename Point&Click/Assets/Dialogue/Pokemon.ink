@@ -1,8 +1,5 @@
 INCLUDE Globals.ink
-Angel: I have come to warn you! 
-Your father, the King! Has been kidnapped by Draggy the Dragon!
-If you are to save him, you need to pull yourself together and journey unto worlds end. 
-There you can face Draggy in the Battle of the Bands for your fathers soul!
+Angel: I have come to warn you! Your father, the King! Has been kidnapped by Draggy the Dragon! If you are to save him, you need to pull yourself together and journey unto worlds end. There you can face Draggy in the Battle of the Bands for your fathers soul!
 
 
 
