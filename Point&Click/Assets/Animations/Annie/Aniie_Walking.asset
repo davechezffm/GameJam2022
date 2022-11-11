@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 71c4704957819b14c83c1515d23ec720, type: 3}
+  m_Name: Aniie_Walking
+  m_EditorClassIdentifier: 
+  sprites:
+  - {fileID: 3251676009025839995, guid: 5c7978e1ec1f5344499c9b92aa4268d3, type: 3}
+  - {fileID: -5446505958053313998, guid: 5c7978e1ec1f5344499c9b92aa4268d3, type: 3}
+  - {fileID: 1225667218292146941, guid: 5c7978e1ec1f5344499c9b92aa4268d3, type: 3}
+  - {fileID: 7906848741740928401, guid: 5c7978e1ec1f5344499c9b92aa4268d3, type: 3}
+  - {fileID: -6025844875751626171, guid: 5c7978e1ec1f5344499c9b92aa4268d3, type: 3}
+  - {fileID: 960892562067315593, guid: 5c7978e1ec1f5344499c9b92aa4268d3, type: 3}
+  framesOfGap: 10
+  loop: 1
+  returnToBase: 0
+  sounds: 

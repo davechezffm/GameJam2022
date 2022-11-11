@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 71c4704957819b14c83c1515d23ec720, type: 3}
+  m_Name: Walking
+  m_EditorClassIdentifier: 
+  sprites:
+  - {fileID: 7913383398114396083, guid: 8e5c792b963e0aa4db0a0005d47c0a9f, type: 3}
+  - {fileID: 892309608941294445, guid: 8e5c792b963e0aa4db0a0005d47c0a9f, type: 3}
+  - {fileID: -4824811167174831647, guid: 8e5c792b963e0aa4db0a0005d47c0a9f, type: 3}
+  - {fileID: 1993179647964149914, guid: 8e5c792b963e0aa4db0a0005d47c0a9f, type: 3}
+  - {fileID: -8996539121420406875, guid: 8e5c792b963e0aa4db0a0005d47c0a9f, type: 3}
+  - {fileID: 7122851510902931759, guid: 8e5c792b963e0aa4db0a0005d47c0a9f, type: 3}
+  framesOfGap: 10
+  loop: 1
+  returnToBase: 0
+  sounds: 
