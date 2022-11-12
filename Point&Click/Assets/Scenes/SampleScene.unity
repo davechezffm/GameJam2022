@@ -318,7 +318,7 @@ MonoBehaviour:
   cutsceneMore: 0
   sceneName: 
   sceneClose: {fileID: 1844043608}
-  sceneOpen: {fileID: 0}
+  sceneOpen: {fileID: 131778460}
   endScene: 0
   characterName: 
   characterText: {fileID: 0}
@@ -350,7 +350,7 @@ PlayableDirector:
   m_GameObject: {fileID: 106422905}
   m_Enabled: 1
   serializedVersion: 3
-  m_PlayableAsset: {fileID: 11400000, guid: 846e14debe4e5a84898ff4f3965c8af4, type: 2}
+  m_PlayableAsset: {fileID: 11400000, guid: a5ec52a669376fe4db90f9d4be041118, type: 2}
   m_InitialState: 1
   m_WrapMode: 2
   m_DirectorUpdateMode: 1
@@ -360,6 +360,10 @@ PlayableDirector:
     value: {fileID: 106422908}
   - key: {fileID: -6924164240457004996, guid: 846e14debe4e5a84898ff4f3965c8af4, type: 2}
     value: {fileID: 1798254360}
+  - key: {fileID: 1037067858005637821, guid: a5ec52a669376fe4db90f9d4be041118, type: 2}
+    value: {fileID: 106422908}
+  - key: {fileID: 1088130527644220388, guid: a5ec52a669376fe4db90f9d4be041118, type: 2}
+    value: {fileID: 0}
   m_ExposedReferences:
     m_References: []
 --- !u!1 &131778460
@@ -8336,12 +8340,12 @@ PrefabInstance:
     - target: {fileID: 2214479637494859259, guid: 71dee0fd6253c1940a07ea112921a76a,
         type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2214479637494859259, guid: 71dee0fd6253c1940a07ea112921a76a,
         type: 3}
       propertyPath: m_AnchorMin.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2214479637494859259, guid: 71dee0fd6253c1940a07ea112921a76a,
         type: 3}
@@ -8356,7 +8360,7 @@ PrefabInstance:
     - target: {fileID: 2214479637494859259, guid: 71dee0fd6253c1940a07ea112921a76a,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 1.4
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2214479637494859259, guid: 71dee0fd6253c1940a07ea112921a76a,
         type: 3}
@@ -8516,12 +8520,12 @@ PrefabInstance:
     - target: {fileID: 6964742625448835234, guid: 71dee0fd6253c1940a07ea112921a76a,
         type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6964742625448835234, guid: 71dee0fd6253c1940a07ea112921a76a,
         type: 3}
       propertyPath: m_AnchorMin.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6964742625448835234, guid: 71dee0fd6253c1940a07ea112921a76a,
         type: 3}
@@ -8536,7 +8540,7 @@ PrefabInstance:
     - target: {fileID: 6964742625448835234, guid: 71dee0fd6253c1940a07ea112921a76a,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 0.75
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6964742625448835234, guid: 71dee0fd6253c1940a07ea112921a76a,
         type: 3}
@@ -8546,12 +8550,12 @@ PrefabInstance:
     - target: {fileID: 8476537275539585892, guid: 71dee0fd6253c1940a07ea112921a76a,
         type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8476537275539585892, guid: 71dee0fd6253c1940a07ea112921a76a,
         type: 3}
       propertyPath: m_AnchorMin.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8476537275539585892, guid: 71dee0fd6253c1940a07ea112921a76a,
         type: 3}
@@ -8566,7 +8570,7 @@ PrefabInstance:
     - target: {fileID: 8476537275539585892, guid: 71dee0fd6253c1940a07ea112921a76a,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 1.75
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8476537275539585892, guid: 71dee0fd6253c1940a07ea112921a76a,
         type: 3}
@@ -8890,8 +8894,8 @@ MonoBehaviour:
   sceneClose: {fileID: 1844043608}
   sceneOpen: {fileID: 131778460}
   endScene: 0
-  characterName: 
-  characterText: {fileID: 0}
+  characterName: Angel
+  characterText: {fileID: 1585736151}
 --- !u!95 &1844043611
 Animator:
   serializedVersion: 3
