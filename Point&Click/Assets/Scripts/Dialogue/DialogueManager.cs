@@ -78,7 +78,7 @@ public class DialogueManager : MonoBehaviour
         ContinueStory();  
        
     }
-    private void ExitDialogueMode()
+    public void ExitDialogueMode()
     {
         dialogueVariables.StopListening(currentStory);
         dialogueIsPlaying = false;

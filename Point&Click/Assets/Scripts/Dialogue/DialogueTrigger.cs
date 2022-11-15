@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.EventSystems;
+using TMPro;
 
 public class DialogueTrigger : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler, IPointerClickHandler
 {
@@ -10,11 +11,10 @@ public class DialogueTrigger : MonoBehaviour, IPointerEnterHandler, IPointerExit
     [SerializeField] private GameObject visualCue;
     private bool mouseHover;
     public ClickManager clickManager;
-   
-    
-
     [Header("INK Json")]
     [SerializeField] TextAsset inkJson;
+    public string characterName;
+    public TextMeshProUGUI characterText;
 
     private void Awake()
     {
@@ -58,7 +58,10 @@ public class DialogueTrigger : MonoBehaviour, IPointerEnterHandler, IPointerExit
             if (!DialogueManager.GetInstance().dialogueIsPlaying)
             {if(clickManager.itemSuccess==false)
                 DialogueManager.GetInstance().EnterDialogueMode(inkJson);
-            }
+            characterText.text = characterName;
+
+
+        }
         }
 
     IEnumerator DisplayDialogueCutScene()

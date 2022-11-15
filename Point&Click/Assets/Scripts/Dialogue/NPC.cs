@@ -9,6 +9,8 @@ public class NPC : MonoBehaviour
     public DialogueManager dialogueManager;
     public string item;
     GameManager gameManager;
+    public GameObject closeScene;
+    public GameObject loadScene;
     
     // Start is called before the first frame update
     void Start()
@@ -25,6 +27,12 @@ public class NPC : MonoBehaviour
         {
            
              ((Ink.Runtime.BoolValue)DialogueManager.GetInstance().GetVariableState(item)).value = true;
+        }
+
+        if (test == true)
+        {
+            closeScene.SetActive(false);
+            loadScene.SetActive(true);
         }
     }
 }

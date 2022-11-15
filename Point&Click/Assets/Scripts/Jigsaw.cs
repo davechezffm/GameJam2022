@@ -13,8 +13,10 @@ public class Jigsaw : MonoBehaviour
     private float y;
     private float x;
     private bool inPlace;
+    public Timer timerScript;
     private void Start()
     {
+        timerScript = FindObjectOfType<Timer>();
         startPosition = transform.position;
         y = rTransform.localPosition.y;
         x = rTransform.localPosition.x;
@@ -40,9 +42,11 @@ public class Jigsaw : MonoBehaviour
 
     public void StartDrag()
     {
-       
+        if (timerScript.gameOver == false)
+        {
             startPosition = transform.position;
             dragging = true;
+        }
         
         
     }
@@ -54,20 +58,27 @@ public class Jigsaw : MonoBehaviour
         {
             gameObject.GetComponent<RectTransform>().localPosition = new Vector2(x,y);
             inPlace = true;
+            timerScript.jigsawPiecesInPlace = timerScript.jigsawPiecesInPlace + 1;
         }
 
-        else { 
-            transform.position = startPosition;
+        else {
             gameObject.GetComponent<BoxCollider2D>().enabled = false;
+            transform.position = startPosition;
+       
         
         }
        
     }
 
     private void OnTriggerEnter2D(Collider2D collider2D)
-    {  if(collider2D.CompareTag(answerTag))
-        Debug.Log("Detection");
-        correct = true;
+    {
+        if (collider2D.CompareTag(answerTag))
+        {
+            Debug.Log("Detection");
+            correct = true;
+        }
+
+        else { correct = false; }
         
     }
 
