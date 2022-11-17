@@ -521,6 +521,7 @@ MonoBehaviour:
   characterName: 
   character: {fileID: 0}
   CharacterImageUI: {fileID: 0}
+  loadObject: 0
   characterText: {fileID: 0}
 --- !u!95 &106422908
 Animator:
@@ -2838,6 +2839,7 @@ MonoBehaviour:
   characterName: Barman
   character: {fileID: 1386196679}
   CharacterImageUI: {fileID: 128516191}
+  loadObject: 0
   characterText: {fileID: 1315048324}
 --- !u!1 &688811171
 GameObject:
@@ -4397,8 +4399,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dm: {fileID: 0}
   dialogue: {fileID: 4900000, guid: 60972f1c82a8b854db05cb09630d7a29, type: 3}
-  objectItem: 
-  cutscene: {fileID: 0}
+  objectItem: Jigsaw
+  cutscene: {fileID: 131498010}
   cutsceneFinished: 0
   cutsceneMore: 0
   sceneName: 
@@ -4408,6 +4410,7 @@ MonoBehaviour:
   characterName: Viola
   character: {fileID: 2064016255}
   CharacterImageUI: {fileID: 128516191}
+  loadObject: 1
   characterText: {fileID: 1315048324}
 --- !u!4 &927119650
 Transform:
@@ -6019,7 +6022,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1381137567
 Transform:
   m_ObjectHideFlags: 0
@@ -8277,7 +8280,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1844043609
 Transform:
   m_ObjectHideFlags: 0
@@ -8320,6 +8323,7 @@ MonoBehaviour:
   characterName: Angel
   character: {fileID: 1179054854}
   CharacterImageUI: {fileID: 128516191}
+  loadObject: 0
   characterText: {fileID: 1315048324}
 --- !u!95 &1844043611
 Animator:

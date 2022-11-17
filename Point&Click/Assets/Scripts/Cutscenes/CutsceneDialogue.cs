@@ -22,6 +22,7 @@ public class CutsceneDialogue : MonoBehaviour
     public string characterName;
     public Image character;
     public GameObject CharacterImageUI;
+    public bool loadObject;
   
     public TextMeshProUGUI characterText;
     // Start is called before the first frame update
@@ -36,19 +37,27 @@ public class CutsceneDialogue : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-       
+
         //If the cutscene continues after the dialogue.
 
 
         if (cutsceneMore == true)
+        {
             //The bool here is in the globals list. This needs to be made true at the end of the dialogue in INK
-       cutsceneFinished = ((Ink.Runtime.BoolValue)DialogueManager.GetInstance().GetVariableState(objectItem)).value;
-        if (cutsceneFinished == true)
-        {//This simply will enable the next part of the cutscene.
-            
-            //cutscene.SetActive(true);
-            dm.ExitDialogueMode();
-            LoadScene();
+            cutsceneFinished = ((Ink.Runtime.BoolValue)DialogueManager.GetInstance().GetVariableState(objectItem)).value;
+            if (cutsceneFinished == true)
+            {//This simply will enable the next part of the cutscene.
+
+                //cutscene.SetActive(true);
+                dm.ExitDialogueMode();
+                LoadScene();
+            }
+
+            if (loadObject == true)
+            {
+                cutscene.SetActive(true);
+                dm.ExitDialogueMode();
+            }
         }
     }
 

@@ -1,3 +1,5 @@
+INCLUDE Globals.ink
+
 Hmpf, Who do you think you are, approaching me, The world renowned, Viola!
 
 + [I am the protagonist in this story!]
@@ -44,6 +46,10 @@ Obviously! It took me over a rainbow!
 
 ===Goodbye===
 Good Riddance.
+->Jigsaw
+
+===Jigsaw===
+~Jigsaw=true
 ->END
 
 

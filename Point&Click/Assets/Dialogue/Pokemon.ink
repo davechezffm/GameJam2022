@@ -63,7 +63,7 @@ I did. Farewell, Goodluck
 
 ===Angel===
 We are paid in communion wafers and wine, so not motivated to go above and beyond.  Farewell, If you find my wafers let me know!
-+ [Errr Thanks]
++ [Errr Thanks? (proceed)]
 -> Scene2
 
 ===Scene2===
