@@ -46,7 +46,7 @@ public class ClickManager : MonoBehaviour
 
 
 
-    private void TryGettingItem(ItemData item)
+    public void TryGettingItem(ItemData item)
     {//-1 allows an item to be instantly picked up.
         bool canGetItem = (item.requiredItemID == -1 && (gameManager.selectedItemID <= 0) || gameManager.selectedItemID == item.requiredItemID);
         if (canGetItem)
@@ -80,7 +80,7 @@ public class ClickManager : MonoBehaviour
         //Play Base Animation
         player.GetComponent<SpriteAnimator>().PlayAnimation(gameManager.playerAnimations[0]);
         player.GetComponentInChildren<SpriteRenderer>().flipX = item.flipX;
-        yield return new WaitForSeconds(0.5f);
+        yield return new WaitForSeconds(0.1f);
 
 
         //Destroy the game object of the item you pick up.

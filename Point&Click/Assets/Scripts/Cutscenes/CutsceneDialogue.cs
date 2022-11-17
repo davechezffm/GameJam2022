@@ -20,6 +20,8 @@ public class CutsceneDialogue : MonoBehaviour
     public GameObject sceneOpen;
     public bool endScene;
     public string characterName;
+    public Image character;
+    public GameObject CharacterImageUI;
   
     public TextMeshProUGUI characterText;
     // Start is called before the first frame update
@@ -27,6 +29,8 @@ public class CutsceneDialogue : MonoBehaviour
     private void Start()
     {
         dm = FindObjectOfType<DialogueManager>();
+        CharacterImageUI.GetComponent<Image>().sprite = character.sprite;
+        
         
     }
     // Update is called once per frame
@@ -41,8 +45,10 @@ public class CutsceneDialogue : MonoBehaviour
        cutsceneFinished = ((Ink.Runtime.BoolValue)DialogueManager.GetInstance().GetVariableState(objectItem)).value;
         if (cutsceneFinished == true)
         {//This simply will enable the next part of the cutscene.
-            //SceneManager.LoadScene(sceneName);
-            cutscene.SetActive(true);
+            
+            //cutscene.SetActive(true);
+            dm.ExitDialogueMode();
+            LoadScene();
         }
     }
 
